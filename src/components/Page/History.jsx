@@ -5,6 +5,7 @@ import micro from "../../Img/micro.png";
 import net from "../../Img/net.png";
 import eletro from "../../Img/eletro.png";
 import cet from "../../Img/cet.png";
+import theme from "../../theme";
 
 const History = () => {
   return (
@@ -26,6 +27,12 @@ const ContainerHist = styled.div`
   justify-content: space-evenly;
   align-items: center;
   margin-top: 100px;
+  @media (max-width: 1020px) {
+    flex-direction: column;
+    height: 90%;
+    margin-top: 30px;
+    padding: 0;
+  }
 `;
 const H1 = styled.div`
   margin-top: 150px;
@@ -35,6 +42,18 @@ const H1 = styled.div`
   background-image: url(${guitar});
   background-position: center;
   background-size: cover;
+  transition: all 0.5s;
+  cursor: pointer;
+  :hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  @media (max-width: 1020px) {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 150px;
+  }
 `;
 const H2 = styled.div`
   margin-top: 150px;
@@ -44,6 +63,17 @@ const H2 = styled.div`
   background-image: url(${micro});
   background-position: center;
   background-size: cover;
+  transition: all 0.5s;
+  cursor: pointer;
+  :hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  @media (max-width: 1020px) {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+  }
 `;
 const H3 = styled.div`
   margin-top: 150px;
@@ -53,6 +83,17 @@ const H3 = styled.div`
   background-image: url(${net});
   background-position: center;
   background-size: cover;
+  transition: all 0.5s;
+  cursor: pointer;
+  :hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  @media (max-width: 1020px) {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+  }
 `;
 
 const H4 = styled.div`
@@ -63,6 +104,17 @@ const H4 = styled.div`
   background-image: url(${eletro});
   background-position: center;
   background-size: cover;
+  transition: all 0.5s;
+  cursor: pointer;
+  :hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  @media (max-width: 1020px) {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+  }
 `;
 const H5 = styled.div`
   margin-top: 150px;
@@ -72,5 +124,16 @@ const H5 = styled.div`
   background-image: url(${cet});
   background-position: center;
   background-size: cover;
+  transition: all 0.5s;
+  cursor: pointer;
+  :hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  @media (max-width: 1020px) {
+    width: 150px;
+    height: 150px;
+    margin: 30px;
+  }
 `;
 export default History;
