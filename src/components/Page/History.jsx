@@ -33,6 +33,10 @@ const ContainerHist = styled.div`
     margin-top: 30px;
     padding: 0;
   }
+  @media (max-width: 1500px) {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
 `;
 const H1 = styled.div`
   margin-top: 150px;

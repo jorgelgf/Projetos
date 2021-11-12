@@ -34,6 +34,7 @@ const DivFull = styled.div`
   height: 1334px;
   background: url(${bg});
   margin: auto;
+
   @media (max-width: 1020px) {
     width: 100%;
     height: 100%;
@@ -49,7 +50,7 @@ const Section = styled.section`
   //border: 1px solid black;
   @media (max-width: 1020px) {
     flex-direction: column;
-    height: 50%;
+
     background-color: #ffffff7d;
     justify-content: space-between;
   }
@@ -57,9 +58,18 @@ const Section = styled.section`
 const Am = styled.p`
   font-size: 35px;
   font-family: ${theme.text.fontFamily};
-  color: ${theme.colors.primary}
-  margin: auto;
-
+  color: ${theme.colors.primary};
+  margin-top: 15px;
+  display: flex;
+  @media (max-width: 1435px) {
+    margin-top: 100px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
 `;
 
 const Avatar = styled.div`
