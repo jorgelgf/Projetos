@@ -23,6 +23,10 @@ const Cards = () => {
     setHeight(window.screen.height - 220);
   }, [width]);
 
+  const onClick = () => {
+    return console.log("clicou");
+  };
+
   return (
     <>
       <TypeProj>PROJETOS WEB</TypeProj>
@@ -44,6 +48,7 @@ const Cards = () => {
           images={images2}
           showBullets={true}
           showNavs={true}
+          onClick={() => onClick}
         />
       </Slides>
     </>
