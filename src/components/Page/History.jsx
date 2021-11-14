@@ -10,11 +10,16 @@ import theme from "../../theme";
 const History = () => {
   return (
     <ContainerHist>
-      <H1 />
-      <H2 />
-      <H3 />
-      <H4 />
-      <H5 />
+      <AboutMe>
+        SOBRE MIM
+        <Hist>
+          <H1 />
+          <H2 />
+          <H3 />
+          <H4 />
+          <H5 />
+        </Hist>
+      </AboutMe>
     </ContainerHist>
   );
 };
@@ -26,20 +31,40 @@ const ContainerHist = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 100px;
+`;
+const AboutMe = styled.div`
+  //border: solid 1px black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: ${theme.colors.primary};
+  font-family: ${theme.text.fontFamily};
+  font-size: 30px;
+  margin-top: 30px;
+  @media (max-width: 1500px) {
+    font-size: 20px;
+  }
+`;
+const Hist = styled.div`
+  //border: solid 1px black;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
   @media (max-width: 1020px) {
     flex-direction: column;
     height: 90%;
-    margin-top: 30px;
-    padding: 0;
+    align-items: center;
   }
   @media (max-width: 1500px) {
     margin-top: 10px;
-    margin-bottom: 0px;
   }
 `;
+
 const H1 = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -53,14 +78,14 @@ const H1 = styled.div`
     transform: scale(1.5);
   }
   @media (max-width: 1020px) {
-    margin: 0;
+    margin-top: 30px;
     padding: 0;
     width: 150px;
     height: 150px;
   }
 `;
 const H2 = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -76,11 +101,11 @@ const H2 = styled.div`
   @media (max-width: 1020px) {
     width: 150px;
     height: 150px;
-    margin: 30px;
+    margin-top: 30px;
   }
 `;
 const H3 = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -96,12 +121,12 @@ const H3 = styled.div`
   @media (max-width: 1020px) {
     width: 150px;
     height: 150px;
-    margin: 30px;
+    margin-top: 30px;
   }
 `;
 
 const H4 = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -117,11 +142,11 @@ const H4 = styled.div`
   @media (max-width: 1020px) {
     width: 150px;
     height: 150px;
-    margin: 30px;
+    margin-top: 30px;
   }
 `;
 const H5 = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -137,7 +162,7 @@ const H5 = styled.div`
   @media (max-width: 1020px) {
     width: 150px;
     height: 150px;
-    margin: 30px;
+    margin-top: 30px;
   }
 `;
 export default History;

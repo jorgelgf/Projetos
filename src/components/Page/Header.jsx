@@ -9,13 +9,21 @@ const Header = () => {
     <HeaderStyle>
       <IconJ>J</IconJ>
       <IconNet>
-        <a href="#">
+        <a target="_blank" rel="noreferrer" href="https://github.com/jorgelgf">
           <IconNetImg src={git} alt="Github" />
         </a>
-        <a href="#">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/jorgelgf/"
+        >
           <IconNetImg src={link} alt="Linkedin" />
         </a>
-        <a href="#">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://www.instagram.com/jorgeluisgurgel/"
+        >
           <IconNetImg src={insta} alt="Instagram" />
         </a>
       </IconNet>

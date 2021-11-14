@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import bg from "../../Img/bg.jpg";
-import theme from "../../theme";
 import Header from "./Header";
 import me from "../../Img/jorge.jpg";
 import infome from "../../Img/jl.png";
 
 import History from "./History";
+
+import Cards from "../Carousel/Cards";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -17,12 +19,13 @@ const Home = () => {
         <AboutMe>
           <InfoIMG
             src={infome}
-            alt="Eu sou Jorge luís, desenvolvedor web e produtod musical"
+            alt="Eu sou Jorge luís, desenvolvedor web e produtor musical"
           />
-          <Am>SOBRE MIM</Am>
         </AboutMe>
       </Section>
       <History></History>
+      <Cards />
+      <Footer></Footer>
     </DivFull>
   );
 };
@@ -31,9 +34,11 @@ const DivFull = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1334px;
+  height: 100%;
   background: url(${bg});
   margin: auto;
+  align-items: center;
+  //border: solid 1px black;
 
   @media (max-width: 1020px) {
     width: 100%;
@@ -48,27 +53,11 @@ const Section = styled.section`
   align-items: center;
   justify-content: space-around;
   //border: 1px solid black;
+
   @media (max-width: 1020px) {
     flex-direction: column;
-
     background-color: #ffffff7d;
     justify-content: space-between;
-  }
-`;
-const Am = styled.p`
-  font-size: 35px;
-  font-family: ${theme.text.fontFamily};
-  color: ${theme.colors.primary};
-  margin-top: 15px;
-  display: flex;
-  @media (max-width: 1435px) {
-    margin-top: 100px;
-  }
-  @media (max-width: 1024px) {
-    font-size: 24px;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    justify-content: center;
   }
 `;
 
