@@ -19,7 +19,7 @@ const Cards = () => {
   const [height, setHeight] = useState(204);
 
   useEffect(() => {
-    setWidth(window.screen.width - 100);
+    setWidth(window.screen.width - 10);
     setHeight(window.screen.height - 220);
   }, [width]);
 
