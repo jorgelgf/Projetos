@@ -23,14 +23,14 @@ const Home = () => {
           />
         </AboutMe>
       </Section>
-      <History></History>
+      <History />
       <Cards />
-      <Footer></Footer>
+      <Footer />
     </DivFull>
   );
 };
 
-const DivFull = styled.div`
+export const DivFull = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -39,6 +39,16 @@ const DivFull = styled.div`
   margin: auto;
   align-items: center;
   //border: solid 1px black;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
+
+  @keyframes animeLeft {
+    to {
+      opacity: 1;
+      transform: initial;
+    }
+  }
 
   @media (max-width: 1020px) {
     width: 100%;

@@ -6,18 +6,24 @@ import net from "../../Img/net.png";
 import eletro from "../../Img/eletro.png";
 import cet from "../../Img/cet.png";
 import theme from "../../theme";
+import { useNavigate } from "react-router-dom";
 
 const History = () => {
+  const navitage = useNavigate();
+  const handleClick = (e) => {
+    if (e === 1) navitage("/h1");
+  };
+
   return (
     <ContainerHist>
       <AboutMe>
         SOBRE MIM
         <Hist>
-          <H1 />
-          <H2 />
-          <H3 />
-          <H4 />
-          <H5 />
+          <H1 onClick={() => handleClick(1)} />
+          <H2 onClick={() => handleClick(2)} />
+          <H3 onClick={() => handleClick(3)} />
+          <H4 onClick={() => handleClick(4)} />
+          <H5 onClick={() => handleClick(5)} />
         </Hist>
       </AboutMe>
     </ContainerHist>
@@ -63,7 +69,7 @@ const Hist = styled.div`
   }
 `;
 
-const H1 = styled.div`
+const H1 = styled.button`
   margin-top: 100px;
   width: 200px;
   height: 200px;
@@ -77,14 +83,14 @@ const H1 = styled.div`
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
-  @media (max-width: 1020px) {
+  @media (max-width: 1220px) {
     margin-top: 30px;
     padding: 0;
     width: 150px;
     height: 150px;
   }
 `;
-const H2 = styled.div`
+const H2 = styled.button`
   margin-top: 100px;
   width: 200px;
   height: 200px;
@@ -98,13 +104,13 @@ const H2 = styled.div`
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
-  @media (max-width: 1020px) {
+  @media (max-width: 1220px) {
     width: 150px;
     height: 150px;
     margin-top: 30px;
   }
 `;
-const H3 = styled.div`
+const H3 = styled.button`
   margin-top: 100px;
   width: 200px;
   height: 200px;
@@ -118,14 +124,14 @@ const H3 = styled.div`
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
-  @media (max-width: 1020px) {
+  @media (max-width: 1220px) {
     width: 150px;
     height: 150px;
     margin-top: 30px;
   }
 `;
 
-const H4 = styled.div`
+const H4 = styled.button`
   margin-top: 100px;
   width: 200px;
   height: 200px;
@@ -139,13 +145,13 @@ const H4 = styled.div`
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
-  @media (max-width: 1020px) {
+  @media (max-width: 1220px) {
     width: 150px;
     height: 150px;
     margin-top: 30px;
   }
 `;
-const H5 = styled.div`
+const H5 = styled.button`
   margin-top: 100px;
   width: 200px;
   height: 200px;
@@ -159,7 +165,7 @@ const H5 = styled.div`
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
-  @media (max-width: 1020px) {
+  @media (max-width: 1220px) {
     width: 150px;
     height: 150px;
     margin-top: 30px;

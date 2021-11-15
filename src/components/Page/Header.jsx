@@ -48,6 +48,9 @@ const IconJ = styled.div`
   font-weight: normal;
   color: ${theme.colors.primary};
   //  border: 11px red solid;
+  @media (max-width: 1200px) {
+    font-size: 50px;
+  }
 `;
 const IconNet = styled.div`
   display: flex;
@@ -62,6 +65,9 @@ const IconNetImg = styled.img`
   width: 3em;
   align-items: center;
   margin-bottom: 10px;
+  @media (max-width: 1200px) {
+    width: 2em;
+  }
 `;
 
 export default Header;

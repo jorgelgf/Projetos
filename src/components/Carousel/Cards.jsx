@@ -19,13 +19,9 @@ const Cards = () => {
   const [height, setHeight] = useState(204);
 
   useEffect(() => {
-    setWidth(window.screen.width - 220);
+    setWidth(window.screen.width - 100);
     setHeight(window.screen.height - 220);
   }, [width]);
-
-  const onClick = () => {
-    return console.log("clicou");
-  };
 
   return (
     <>
@@ -48,7 +44,6 @@ const Cards = () => {
           images={images2}
           showBullets={true}
           showNavs={true}
-          onClick={() => onClick}
         />
       </Slides>
     </>
@@ -60,12 +55,12 @@ const Slides = styled.div`
   border: solid rgba(9, 9, 9, 0.1) 10px;
   border-radius: 5px;
   margin-top: 1%;  
+
   }
 `;
 
 const TypeProj = styled.p`
   display: flex;
-
   margin: auto;
   margin-top: 140px;
   justify-content: center;
