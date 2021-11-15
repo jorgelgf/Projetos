@@ -6,10 +6,8 @@ import net from "../../Img/net.png";
 import eletro from "../../Img/eletro.png";
 import cet from "../../Img/cet.png";
 import theme from "../../theme";
-import { useNavigate } from "react-router-dom";
 
 const History = () => {
-  const navitage = useNavigate();
   const handleClick = (e) => {
     alert("Calma, ainda estou produzindo :)");
   };
