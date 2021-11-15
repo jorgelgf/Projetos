@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const History = () => {
   const navitage = useNavigate();
   const handleClick = (e) => {
-    if (e === 1) navitage("/h1");
+    alert("Calma, ainda estou produzindo :)");
   };
 
   return (
